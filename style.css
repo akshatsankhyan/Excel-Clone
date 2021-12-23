@@ -1,0 +1,250 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.page-actions-cont{
+    height: 3rem;
+    background-color: rgb(29, 111, 66);
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+}
+.page-action{
+    margin: 6px 10px;
+    color: #f1f2f6;
+    /* text-decoration: 5px solid underline  rgb(253, 1, 1); */
+}
+.page-actions-cont>*:hover{
+    font-weight: bold;
+    /* background:grey;  */
+    /* background-color: #4b4b4b; */
+    cursor: pointer;
+}
+.menu-bar{
+    height: 4rem;
+    background-color: rgb(221, 221, 218);
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.menu-bar > *{
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.menu-bar >:hover{
+    background-color: white
+}
+.menu-bar > select{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.font-family-prop{
+    padding: 0.3rem;
+}
+.font-size-prop{
+    padding: 0.3rem;
+}
+.color-fill{
+    position: relative;
+}
+.color-fill > input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.color-text{
+    position: relative;
+}
+.color-text > input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.formula-bar-cont{
+    height: 1.5rem;
+    background-color:  rgb(221, 221, 218);
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.formula-bar-cont > *{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.formula-bar-cont > input{
+    border: none;
+    outline: none;
+    height: 60%;
+    font-size: 0.75rem;
+}
+.address-bar{
+    width: 3rem;
+    text-align: center;
+}
+.formula-icon{
+    width: 1rem;
+
+}
+.formula-bar{
+    width: calc(100vw - 1rem - 1rem - 1rem);
+}
+.grid-container{
+    height: calc(100vh - 3rem - 4rem - 1.5rem - 2.5rem);
+    /* background-color: #ecf0f1; */
+    background-color:  white;
+    overflow: scroll;
+    position: relative;
+    border: black;
+}
+.top-left-cell{
+    height: 1.5rem;
+    width: 2rem;
+    background-color: #e0e0e4;
+    position: fixed;
+    z-index: 8;
+}
+.top-left-icon{
+    padding-left: 0.8rem;
+    padding-top: 0.2rem;
+}
+.left-col{
+    /* height: 35rem; */
+    width: 2rem;
+    position: sticky;
+    z-index: 3;
+    top: 2rem;
+    left: 0rem;
+    background-color: #e0e0e4;
+    font-size: 0.8rem;
+}
+.top-row{
+    /* height: 2rem;
+    width: 100vw; */
+    display: flex;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    left: 2rem;
+    background-color: #e0e0e4;
+    font-size: 0.8rem;
+}
+.top-row-cell:hover{
+    background-color: rgb(76, 209, 136);
+}
+.left-col-cell:hover{
+    background-color: rgb(76, 209, 136);
+}
+.grid{
+    /* height: 100vh ; */
+    /* width: 100vw; */
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    
+    
+}
+
+/* **************JAVASCRIPT CLASSES***********8 */
+.left-col-cell{
+    min-height: 1.5rem;
+    min-width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #d0d2d4; */
+    border-bottom: 1px solid #d0d2d4;
+}
+.top-row-cell{
+    height: 1.5rem;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #d0d2d4; */
+    /* border-top: none; */
+    border-right: 1px solid #d0d2d4;    
+
+}
+.row-cont{
+    display: flex;
+}
+.cells{
+    height: 1.5rem;
+    min-width: 4rem;
+    border: 1px solid #ebeff3;
+    /* border: 1px solid #478de2; */
+    outline: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+
+
+
+.sheet-container{
+    height: 2.5rem;
+    background-color: rgb(221, 221, 218);
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.7rem;
+    gap: 1rem;
+}
+.sheet-container > *{
+    display: inline block;
+}
+.sheet-add-icon{
+    width: 2vw;
+    font-size: 0.1rem;
+}
+.sheet-add-icon:hover{
+    background-color: rgb(76, 209, 136);
+    cursor: pointer;
+}
+.sheet-folder-cont{
+    height: 80%;
+    width: calc(100vw - 3vw);
+
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+.sheet-content{
+    width: 5rem;
+    /* margin-left: 2rem; */
+    height: 50%;
+    /* background-color: lightgreen; */
+}
+.sheet-content:hover{
+    cursor: pointer;
+}
+.sheet-folder{
+    height: 90%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:  red; */
+}
+
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyExcelBook.xlsx</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="icon" type="image/png" href="./excel.png"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-actions-cont">
+        <div class="page-action">File</div>
+        <div class="page-action">Home</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div class="menu-bar">
+        <span class="material-icons copy">
+            content_copy
+        </span>
+        <span class="material-icons cut">
+            content_cut
+        </span>
+        <span class="material-icons paste">
+            content_paste
+        </span>
+        <select class="font-family-prop">
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Helvetica">Verdana</option>
+            <option value="Helvetica">Calibri</option>
+            <option value="Noto">Noto</option>
+            <option value="Lucida Sans">Lucida Sans</option>
+            <option value="Gill Sans">Gill Sans</option>
+            <option value="Century Gothic">Century Gothic</option>
+            <option value="Candara">Candara</option>
+            <option value="Futara">Futara</option>
+            <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Geneva">Geneva</option>
+            <option value="Segoe U">Segoe U</option>
+            <option value="Optima">Optima</option>
+            <option value="Avanta Garde">Avanta Garde</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Big Caslon">Big Caslon</option>
+            <option value="Bodoni MT">Bodoni MT</option>
+            <option value="Book Antiqua">Book Antiqua</option>
+            <option value="Bookman">Bookman</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Comic Sans">Comic Sans</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Impact">Impact</option>
+            <option value="Microsoft Himalaya">Microsoft Himalaya</option>
+            <option value="Microsoft JhengHei">Microsoft JhengHei</option>
+            <option value="Microsoft JhengHei UI">Microsoft JhengHei UI</option>
+            <option value="Microsoft New Tai Lue">Microsoft New Tai Lue</option>
+            <option value="Microsoft PhagsPa">Microsoft PhagsPa</option>
+            <option value="Microsoft Sans Serif">Microsoft Sans Serif</option>
+         </select>
+        <select class="font-size-prop">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+            <option value="72">72</option>
+        </select>
+        <span class="material-icons bold">
+            format_bold
+        </span>
+        <span class="material-icons italic">
+            format_italic
+        </span>
+        <span class="material-icons underline">
+            format_underlined
+        </span>
+        <div class="color-fill">
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="BGcolor-prop"> 
+        </div>
+        <div class="color-text">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="font-color-prop">
+        </div>
+        <span class="left material-icons alignment">
+            format_align_left
+        </span>
+        <span class="center material-icons alignment">
+            format_align_center
+        </span>
+        <span class="right material-icons alignment">
+            format_align_right
+        </span>
+        <span class="material-icons download">
+            cloud_download
+        </span>
+        <span class="material-icons open">
+            cloud_upload
+        </span>
+    </div>
+    <div class="formula-bar-cont">
+        <input type="text" readonly class="address-bar">
+        <img class="formula-icon" src="https://img.icons8.com/ios/50/000000/formula-fx.png"/>
+        <input type="text" class="formula-bar">
+    </div>
+    <div class="grid-container">
+        <div class="top-left-cell">
+            <div class="top-left-icon">◢</div>
+        </div>
+        <div class="left-col"></div>
+        <div class="grid">
+            <div class="top-row"></div>
+          <!-- 2D GRID -->
+        </div>
+    </div>
+    <div class="sheet-container">
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+            </span>
+        </div>
+
+            <div class="sheet-folder-cont">
+                <!-- <div id = "0" class="sheet-folder">
+                     <div class="sheet-content">Sheet 1</div>
+                </div> -->
+            </div>
+    </div>
+    <script src="./grid.js"></script>
+    <script src="./cyclePathTrace.js"></script>
+    <script src="./cycleValidation.js"></script>
+    <script src="./sheetsHandling.js"></script>
+    <script src="./cell_properties.js"></script>
+    <script src="./formula.js"></script>
+    <script src="./cutCopyPaste.js"></script>
+    <script src="./openSave.js"></script>
+</body>
+</html>
